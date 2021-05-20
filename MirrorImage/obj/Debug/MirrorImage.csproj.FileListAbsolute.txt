@@ -1,0 +1,16 @@
+C:\Users\User\documents\visual studio 2015\Projects\MirrorImage\MirrorImage\bin\Debug\MirrorImage.exe.config
+C:\Users\User\documents\visual studio 2015\Projects\MirrorImage\MirrorImage\bin\Debug\MirrorImage.exe
+C:\Users\User\documents\visual studio 2015\Projects\MirrorImage\MirrorImage\bin\Debug\MirrorImage.pdb
+C:\Users\User\documents\visual studio 2015\Projects\MirrorImage\MirrorImage\obj\Debug\MirrorImage.AddUser.resources
+C:\Users\User\documents\visual studio 2015\Projects\MirrorImage\MirrorImage\obj\Debug\MirrorImage.AdminDashboard.resources
+C:\Users\User\documents\visual studio 2015\Projects\MirrorImage\MirrorImage\obj\Debug\MirrorImage.Properties.Resources.resources
+C:\Users\User\documents\visual studio 2015\Projects\MirrorImage\MirrorImage\obj\Debug\MirrorImage.csproj.GenerateResource.Cache
+C:\Users\User\documents\visual studio 2015\Projects\MirrorImage\MirrorImage\obj\Debug\MirrorImage.exe
+C:\Users\User\documents\visual studio 2015\Projects\MirrorImage\MirrorImage\obj\Debug\MirrorImage.pdb
+C:\Users\User\documents\visual studio 2015\Projects\MirrorImage\MirrorImage\obj\Debug\MirrorImage.csprojResolveAssemblyReference.cache
+C:\Users\User\documents\visual studio 2015\Projects\MirrorImage\MirrorImage\obj\Debug\MirrorImage.AddCompany.resources
+C:\Users\User\documents\visual studio 2015\Projects\MirrorImage\MirrorImage\obj\Debug\MirrorImage.AddJobs.resources
+C:\Users\User\documents\visual studio 2015\Projects\MirrorImage\MirrorImage\obj\Debug\MirrorImage.AddCompanyJobs.resources
+C:\Users\User\documents\visual studio 2015\Projects\MirrorImage\MirrorImage\obj\Debug\MirrorImage.AddJobsByVIN.resources
+C:\Users\User\documents\visual studio 2015\Projects\MirrorImage\MirrorImage\bin\Debug\Newtonsoft.Json.dll
+C:\Users\User\documents\visual studio 2015\Projects\MirrorImage\MirrorImage\bin\Debug\Newtonsoft.Json.xml

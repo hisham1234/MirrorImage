@@ -1,0 +1,11 @@
+C:\Users\User\documents\visual studio 2015\Projects\MirrorImage\MirrorImage\bin\Release\MirrorImage.exe.config
+C:\Users\User\documents\visual studio 2015\Projects\MirrorImage\MirrorImage\bin\Release\MirrorImage.exe
+C:\Users\User\documents\visual studio 2015\Projects\MirrorImage\MirrorImage\bin\Release\MirrorImage.pdb
+C:\Users\User\documents\visual studio 2015\Projects\MirrorImage\MirrorImage\obj\Release\MirrorImage.Properties.Resources.resources
+C:\Users\User\documents\visual studio 2015\Projects\MirrorImage\MirrorImage\obj\Release\MirrorImage.csproj.GenerateResource.Cache
+C:\Users\User\documents\visual studio 2015\Projects\MirrorImage\MirrorImage\obj\Release\MirrorImage.exe
+C:\Users\User\documents\visual studio 2015\Projects\MirrorImage\MirrorImage\obj\Release\MirrorImage.pdb
+C:\Users\User\documents\visual studio 2015\Projects\MirrorImage\MirrorImage\obj\Release\MirrorImage.AddUser.resources
+C:\Users\User\documents\visual studio 2015\Projects\MirrorImage\MirrorImage\obj\Release\MirrorImage.AdminDashboard.resources
+C:\Users\User\documents\visual studio 2015\Projects\MirrorImage\MirrorImage\obj\Release\MirrorImage.csprojResolveAssemblyReference.cache
+C:\Users\User\documents\visual studio 2015\Projects\MirrorImage\MirrorImage\obj\Release\MirrorImage.AddCompany.resources
