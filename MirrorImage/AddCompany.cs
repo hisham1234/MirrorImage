@@ -132,10 +132,19 @@ namespace MirrorImage
                     com.Address = txtAddress.Text;
                     com.PhoneNumber = txtPhn.Text;
 
-                    com.DeleteCompany();
-                    MessageBox.Show("Successfully Deleted !");
-                    clearText();
-                    cmpnyGrid.DataSource = com.LoadCompany();
+                    var IsCompanyInUse = com.IsCompanyIsUsed();
+                    if(IsCompanyInUse)
+                    {
+                        MessageBox.Show("The Company Cannot be deleted. Users have using the services of this company !");
+                    }
+                    else
+                    {
+                        com.DeleteCompany();
+                        MessageBox.Show("Successfully Deleted !");
+                        clearText();
+                        cmpnyGrid.DataSource = com.LoadCompany();
+                    }
+                    
 
                 }
                 catch (Exception)

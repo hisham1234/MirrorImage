@@ -118,11 +118,21 @@ namespace MirrorImage
 
                     job.JobId = int.Parse(txtJobId.Text.ToString());
                     job.JobName = txtJob.Text;
-                    job.DeleteJobs();
-                    MessageBox.Show("Job Successfully Deleted!");
-                    jobGrid.DataSource = job.LoadJobs();
-                    jobGrid.ClearSelection();
-                    txtJob.Text = "";
+
+                    var IsJobInUse = job.IsJobIsUsed();
+                    if (IsJobInUse)
+                    {
+                        MessageBox.Show("The Job Cannot be deleted. Users have using this Job !");
+                    }
+                    else
+                    {
+                        job.DeleteJobs();
+                        MessageBox.Show("Job Successfully Deleted!");
+                        jobGrid.DataSource = job.LoadJobs();
+                        jobGrid.ClearSelection();
+                        txtJob.Text = "";
+                    }
+                    
                 }
                 else
                 {

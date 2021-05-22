@@ -68,5 +68,10 @@ namespace MirrorImage
         {
             ShowWorkingPnl(new AddJobsByVIN());
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            ShowWorkingPnl(new ViewUserJobs());
+        }
     }
 }

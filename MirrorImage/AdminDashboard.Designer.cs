@@ -37,6 +37,7 @@
             this.AddCmp = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.ContentPnl = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
             this.panel_Header.SuspendLayout();
             this.panel_sidebar.SuspendLayout();
             this.SuspendLayout();
@@ -64,6 +65,7 @@
             // panel_sidebar
             // 
             this.panel_sidebar.BackColor = System.Drawing.Color.MidnightBlue;
+            this.panel_sidebar.Controls.Add(this.button5);
             this.panel_sidebar.Controls.Add(this.button4);
             this.panel_sidebar.Controls.Add(this.button3);
             this.panel_sidebar.Controls.Add(this.button2);
@@ -136,6 +138,17 @@
             this.ContentPnl.Size = new System.Drawing.Size(1206, 659);
             this.ContentPnl.TabIndex = 4;
             // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(3, 309);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(139, 40);
+            this.button5.TabIndex = 5;
+            this.button5.Text = "View User Jobs";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // AdminDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -166,6 +179,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
     }
 }
 

@@ -157,6 +157,38 @@ namespace MirrorImage
             return dt;
         }
 
+        public bool IsCompanyJobIsUsed()
+        {
+            SqlConnection con = new SqlConnection(conStr);
+            con.Open();
+            SqlCommand cmd = new SqlCommand("select count(*) as jobCount from UserJobs where JobId=@JID and CompanyId=@CID", con);
+            cmd.Parameters.AddWithValue("@JID", this.Job.JobId);
+            cmd.Parameters.AddWithValue("@CID", this.CompanyId);
+            int jCount = int.Parse(cmd.ExecuteScalar().ToString());
+
+
+            con.Close();
+            if (jCount > 0)
+                return true;
+            else
+                return false;
+        }
+
+        public bool IsCompanyIsUsed()
+        {
+            SqlConnection con = new SqlConnection(conStr);
+            con.Open();
+            SqlCommand cmd = new SqlCommand("select count(*) as comCount from UserJobs where CompanyId=@CID", con);
+            cmd.Parameters.AddWithValue("@CID", this.CompanyId);
+            int cCount = int.Parse(cmd.ExecuteScalar().ToString());
+
+
+            con.Close();
+            if (cCount > 0)
+                return true;
+            else
+                return false;
+        }
         
     }
 }

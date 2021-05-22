@@ -50,8 +50,10 @@
             this.btnRemove = new System.Windows.Forms.Button();
             this.btnAddJobs = new System.Windows.Forms.Button();
             this.grdUserJobs = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnExport = new System.Windows.Forms.Button();
+            this.txtDate = new System.Windows.Forms.TextBox();
+            this.txtInvoiceId = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.grdUserJobs)).BeginInit();
             this.SuspendLayout();
             // 
@@ -245,33 +247,51 @@
             this.grdUserJobs.TabIndex = 23;
             this.grdUserJobs.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.grdUserJobs_RowHeaderMouseClick_1);
             // 
-            // button1
+            // btnUpdate
             // 
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(566, 180);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(80, 23);
-            this.button1.TabIndex = 24;
-            this.button1.Text = "Update";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUpdate.Location = new System.Drawing.Point(566, 180);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(80, 23);
+            this.btnUpdate.TabIndex = 24;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // button2
+            // btnExport
             // 
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(691, 207);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(80, 23);
-            this.button2.TabIndex = 25;
-            this.button2.Text = "Export PDF";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnExport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExport.Location = new System.Drawing.Point(691, 207);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(80, 23);
+            this.btnExport.TabIndex = 25;
+            this.btnExport.Text = "Export PDF";
+            this.btnExport.UseVisualStyleBackColor = true;
+            this.btnExport.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // txtDate
+            // 
+            this.txtDate.Location = new System.Drawing.Point(700, 13);
+            this.txtDate.Name = "txtDate";
+            this.txtDate.Size = new System.Drawing.Size(100, 20);
+            this.txtDate.TabIndex = 26;
+            // 
+            // txtInvoiceId
+            // 
+            this.txtInvoiceId.Location = new System.Drawing.Point(546, 12);
+            this.txtInvoiceId.Name = "txtInvoiceId";
+            this.txtInvoiceId.Size = new System.Drawing.Size(100, 20);
+            this.txtInvoiceId.TabIndex = 27;
             // 
             // AddJobsByVIN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 749);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txtInvoiceId);
+            this.Controls.Add(this.txtDate);
+            this.Controls.Add(this.btnExport);
+            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.grdUserJobs);
             this.Controls.Add(this.btnAddJobs);
             this.Controls.Add(this.btnRemove);
@@ -327,7 +347,9 @@
         private System.Windows.Forms.Button btnRemove;
         private System.Windows.Forms.Button btnAddJobs;
         private System.Windows.Forms.DataGridView grdUserJobs;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnExport;
+        private System.Windows.Forms.TextBox txtDate;
+        private System.Windows.Forms.TextBox txtInvoiceId;
     }
 }

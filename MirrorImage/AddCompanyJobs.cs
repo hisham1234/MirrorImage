@@ -147,11 +147,23 @@ namespace MirrorImage
                     com.CompanyId = int.Parse(cmpCmb.SelectedValue.ToString());
                     com.Job.price = Decimal.Parse(txtPrice.Text.ToString());
 
-                    com.DeleteJobsPrice();
-                    MessageBox.Show("Successfully Deleted!");
-                    txtPrice.Text = "";
-                    serviceGrdVw.DataSource = com.LoadJobPrices();
-                    rowId = -1;
+                   
+                    var IsCompanyJobIsUsed = com.IsCompanyJobIsUsed();
+                  
+
+                    if(IsCompanyJobIsUsed)
+                    {
+                        MessageBox.Show("This Record Cannot be Deleted.!");
+                    }
+                    else
+                    {
+                        com.DeleteJobsPrice();
+                        MessageBox.Show("Successfully Deleted!");
+                        txtPrice.Text = "";
+                        serviceGrdVw.DataSource = com.LoadJobPrices();
+                        rowId = -1;
+                    }
+                   
                 }
                 else
                 {
